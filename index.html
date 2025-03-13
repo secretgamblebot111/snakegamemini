@@ -929,6 +929,13 @@
                 <button id="game13-button" onclick="openGame('ba')">Open</button>
             </div>
         </div>
+        <div class="game">
+            <img src="hotline.avif" alt="CoinFlip Preview">
+            <div class="game-info">
+                <h3 id="game-title">Hotline</h3>
+                <button id="game13-button" onclick="openGame('ho')">Open</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1722,6 +1729,10 @@ function openGame(game) {
         ba: {
             ios: 'ba/index.html',
             other: 'ba/index.html'
+        },
+        ho: {
+            ios: 'ho/index.html',
+            other: 'ho/index.html'
         }
     };
             var url = isIOS ? links[game].ios : links[game].other;
